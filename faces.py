@@ -1,7 +1,9 @@
 #Turn :) into 🙂 and :( into 🙁
-message = input().split(' ')
-message.replace(':)', '🙂')
-message.replace(':()', '🙁')
-print(message)
+txt = input()
+
+x = txt.replace(":)", "🙂")
+x=x.replace(":(", "🙁")
+print(x)
+
 
 
