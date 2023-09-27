@@ -9,18 +9,23 @@ for i in extensions:
         if i == '.jpg':
             print('image/jpeg', end='')
             found=True
+            break
         elif i == '.pdf':
             print('application/pdf', end='')
             found=True
+            break
         elif i == '.zip':
             print('application/zip', end='')
             found=True
+            break
         elif i == '.txt':
             print('text/plain', end='')
             found=True
+            break
         else:
             print('image'+'/'+j, end='')
             found=True
+
 
 if found == False:
     print("application/octet-stream")
