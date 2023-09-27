@@ -6,16 +6,16 @@ found=False
 for i in extensions:
     if file_name.find(i) != -1:
         j=i.replace('.','')
-        if i == 'jpg':
+        if i == '.jpg':
             print('image/jpeg', end='')
             found=True
-        elif i == 'txt':
+        elif i == '.txt':
             print('text/plain', end='')
             found=True
-        elif i == 'pdf':
+        elif i == '.pdf':
             print('application/pdf', end='')
             found=True
-        elif i == 'zip':
+        elif i == '.zip':
             print('application/zip', end='')
             found=True
         else:
