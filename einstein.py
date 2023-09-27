@@ -1,4 +1,4 @@
 # Einsteins formula
 m=int(input('m= '))
-c=30000000
+c=300000000
 print('E=', m*c*c)
