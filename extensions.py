@@ -6,7 +6,7 @@ found=False
 for i in extensions:
     if file_name.find(i) != -1:
         j=i.replace('.','')
-        print('image'+'/'+j)
+        print('image'+'/'+j, end='')
         found=True
 
 if found == False:
