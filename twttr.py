@@ -1,5 +1,5 @@
 #vowel substractor
-vowels=['a','e','i','o','u']
+vowels=['a','e','i','o','u', 'A','E','I','O','U']
 #prompt
 Input=input('Input: ')
 Output=''
