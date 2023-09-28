@@ -10,7 +10,7 @@ elif y=='/':
 elif y=='*':
     print(float(x*z))
 elif y=='-':
-    print(float(x/z))
+    print(float(x-z))
 else:
     print('You made a mistake')
 
