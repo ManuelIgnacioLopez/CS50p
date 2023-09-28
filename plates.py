@@ -34,6 +34,8 @@ def is_valid(s):
                 it+=1
                 if i != '':
                     last=it
+            if len(cero) == 0:
+                cero=['There are no numbers','']
 
             if last==1 and cero[0] != '0':
                 return True
