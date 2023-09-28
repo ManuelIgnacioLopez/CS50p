@@ -27,8 +27,13 @@ def is_valid(s):
                 if is_int(lettr):
                     s=s.replace(lettr,'.')
             new_s=s.split('.')
+            it=0
+            for i in new_s:
+                it+=1
+                if i != '':
+                    last=it
 
-            if len(new_s)==1:
+            if last==1:
                 return True
             else:
                 return False
