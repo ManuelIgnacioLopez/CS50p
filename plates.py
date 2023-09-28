@@ -18,6 +18,7 @@ def main():
 
 
 def is_valid(s):
+    cero=list()
     if 2<=len(s)<=6:
         if not is_int(s[0]) and not is_int(s[0]):
             for letter in s:
@@ -25,6 +26,7 @@ def is_valid(s):
                     return False
             for lettr in s:
                 if is_int(lettr):
+                    cero.append(str(lettr))
                     s=s.replace(lettr,'.')
             new_s=s.split('.')
             it=0
@@ -33,7 +35,7 @@ def is_valid(s):
                 if i != '':
                     last=it
 
-            if last==1:
+            if last==1 and cero[0] != '0':
                 return True
             else:
                 return False
