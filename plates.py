@@ -24,13 +24,10 @@ def is_valid(s):
                 if prohibited(letter):
                     return False
             for lettr in s:
-                print(lettr)
                 if is_int(lettr):
-                    print(s)
                     s=s.replace(lettr,'.')
-                    print(s)
             new_s=s.split('.')
-            print(new_s)
+
             if len(new_s)==1:
                 return True
             else:
