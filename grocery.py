@@ -19,7 +19,7 @@ def make_list(grocery_list):
             item=input()
             grocery_list.append(item.upper())
         except EOFError:
-            print()
+            #print()
             return grocery_list.sort()
 
 #list in order and result for user
