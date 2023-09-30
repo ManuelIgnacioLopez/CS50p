@@ -21,13 +21,14 @@ while c==True:
     user= input('Date: ').strip()
     if '/' in user:
         m,d,y=user.split('/')
-        m='0'+m
+        if int(m)<10:
+            m='0'+m
         if int(d)<=31 and int(m)<=12:
             c=False
     else:
         m,d,y=user.split(' ')
+        d=d.replace(',','')
         d=int(d)
-        m=m.replace(',','')
         m=Months.get(m)
         print(m)
         if d<=31 and int(m)<=12:
