@@ -24,8 +24,8 @@ while c==True:
         try:
             if int(m)<10:
                 m='0'+m
-                if int(d)<=31 and int(m)<=12:
-                    c=False
+            if int(d)<=31 and int(m)<=12:
+                c=False
         except:
             'not ok'
     else:
