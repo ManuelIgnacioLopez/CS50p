@@ -8,7 +8,6 @@
 def main():
     grocery_list={}
     make_list(grocery_list)
-    print(grocery_list)
     print_list(grocery_list)
 
 
