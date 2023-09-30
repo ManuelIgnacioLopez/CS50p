@@ -17,7 +17,7 @@ Months = {
     "December": '12'
 }
 # prompt user
-while c=True:
+while c==True:
     user= input('Date: ').strip()
     if '/' in user:
     m,d,y=user.split('/')
