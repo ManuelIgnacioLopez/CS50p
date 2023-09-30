@@ -17,7 +17,7 @@ while True:
     try:
         item=input('Item: ').title()
         Total+=Menu[item]
-        print(f"Total: {Total}")
+        print(f"Total: ${round(Total,2)}")
 
     except (EOFError):
         print('')
