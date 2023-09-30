@@ -21,14 +21,15 @@ def main():
             if int(a)/int(b) == 1:
                 return print('F')
             else:
-                return print(f"{int(int(a)/int(b)*100)}%")
+                return print(f"{round(int(a)/int(b)*100)}%")
     else:
         return print(f"{a}/{b}")
 
 def isint(string):
     numbers=["1","2","3","4","5","6","7","8","9","0"]
-    if string in numbers:
-        return True
-    else:
-        return False
+    for i in string:
+        if i not in numbers:
+            return False
+    return True
+
 main()
