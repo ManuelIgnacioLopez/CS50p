@@ -1,9 +1,13 @@
 import emoji
+var=input("Input: ")
+ok=0
 try:
-    print(f'Output: {emoji.emojize(input("Input: "), language="alias")}')
-except Exception as e:
-    'idk'
-try:
-    print(f'Output: {emoji.emojize(input("Input: "))}')
-except Exception as e:
-    'idk'
+    print(f'Output: {emoji.emojize(var, language="alias")}')
+    ok=True
+finally:
+    if ok != True:
+        try:
+            print(f'Output: {emoji.emojize(var)}')
+        except Exception as e:
+            ok=e
+
