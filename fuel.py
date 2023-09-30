@@ -9,24 +9,25 @@ If, though, X or Y is not an integer, X is greater than Y, or Y is 0, instead pr
 
 #prompt for X/Y
 def main():
-    while c= False:
-
+    c=False
+    while c== False:
         try:
             a, b = input("Fraction: ").split('/')
+            if isint(a) and isint(b):
+                if int(a)<= int (b):
+                    if int(b) != 0:
+                        if int(a)/int(b) <= 1/100:
+                            c=True
+                            return print('E')
+                        if int(a)/int(b) >= 99/100:
+                            c=True
+                            return print('F')
+                        else:
+                            c=True
+                            return print(f"{round(int(a)/int(b)*100)}%")
 
         except Exception as e:
            return print(e)
-        if isint(a) and isint(b):
-            if int(a)< int (b):
-                if int(b) != 0:
-                    if int(a)/int(b) <= 1/100:
-                        return print('E')
-                    if int(a)/int(b) >= 99/100:
-                        return print('F')
-                    else:
-                        return print(f"{round(int(a)/int(b)*100)}%")
-    else:
-        return c=False
 
 def isint(string):
     numbers=["1","2","3","4","5","6","7","8","9","0"]
