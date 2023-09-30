@@ -23,4 +23,4 @@ else:
     m=m.replace(',','')
     m=Months.get(m)
 # create date with new format
-print(f"{y}-{m}-{d}")
+print(f"{y}-{m}-{d}",end='')
