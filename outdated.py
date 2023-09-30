@@ -33,7 +33,7 @@ while c==True:
 # create date with new format
 
 
-if d<=9:
+if int(d)<=9:
     print(f"{y}-{m}-0{d}",end='')
 else:
     print(f"{y}-{m}-{d}",end='')
