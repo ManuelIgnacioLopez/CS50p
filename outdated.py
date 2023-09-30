@@ -20,7 +20,7 @@ Months = {
 while c==True:
     user= input('Date: ').strip()
     if '/' in user:
-    m,d,y=user.split('/')
+        m,d,y=user.split('/')
     if int(d)<=31 and int(m)<=12:
         c=False
     else:
