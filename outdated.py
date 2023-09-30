@@ -21,13 +21,15 @@ while c==True:
     user= input('Date: ').strip()
     if '/' in user:
         m,d,y=user.split('/')
-    if int(d)<=31 and int(m)<=12:
-        c=False
+        m='0'+m
+        if int(d)<=31 and int(m)<=12:
+            c=False
     else:
         m,d,y=user.split(' ')
         d=int(d)
         m=m.replace(',','')
         m=Months.get(m)
+        print(m)
         if d<=31 and int(m)<=12:
             c=False
 # create date with new format
