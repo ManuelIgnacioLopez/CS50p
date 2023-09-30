@@ -30,7 +30,6 @@ while c==True:
         d=d.replace(',','')
         d=int(d)
         m=Months.get(m)
-        print(m)
         if d<=31 and int(m)<=12:
             c=False
 # create date with new format
