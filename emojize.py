@@ -1,6 +1,6 @@
 import emoji
 try:
-    print(f'Output: {emoji.emojize(input("Input: "), language='alias')}')
+    print(f'Output: {emoji.emojize(input("Input: "), language="alias")}')
 except Exception as e:
     'idk'
 try:
