@@ -21,13 +21,16 @@ while c==True:
     user= input('Date: ').strip()
     if '/' in user:
         m,d,y=user.split('/')
-        if int(m)<10:
-            m='0'+m
-        if int(d)<=31 and int(m)<=12:
-            c=False
+        try:
+            if int(m)<10:
+                m='0'+m
+                if int(d)<=31 and int(m)<=12:
+                    c=False
+        except:
+            'not ok'
     else:
         m,d,y=user.split(' ')
-        if m not in Month:
+        if m not in Months:
             c=True
         else:
             if ',' not in d:
