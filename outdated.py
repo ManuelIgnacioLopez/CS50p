@@ -27,11 +27,17 @@ while c==True:
             c=False
     else:
         m,d,y=user.split(' ')
-        d=d.replace(',','')
-        d=int(d)
-        m=Months.get(m)
-        if d<=31 and int(m)<=12:
-            c=False
+        if m not in Month:
+            c=True
+        else:
+            if ',' not in d:
+                c=True
+            else:
+                d=d.replace(',','')
+                d=int(d)
+                m=Months.get(m)
+                if d<=31 and int(m)<=12:
+                    c=False
 # create date with new format
 
 
